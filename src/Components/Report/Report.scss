@@ -1,0 +1,19 @@
+@import '../../Style/variables';
+@import '../../Style/mixin';
+
+.s_m_main{
+    .ant-select-selection{
+        @include borderRadius(0);
+        //border: 1px solid #B2B2B2;
+    }
+    .ant-input{
+        @extend .ant-select-selection;
+        height: 30px;
+    }
+    .ant-select-selection--single{
+        height: 30px;
+    }
+    .ant-select-selection__rendered{
+        line-height: 28px;
+    }
+}
